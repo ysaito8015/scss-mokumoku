@@ -1,0 +1,18 @@
+@use "../_base/global.scss" as *;
+
+.main {
+  float: left;
+  width: 640px;
+  section {
+    margin-bottom: 50px;
+    h1 {
+      font-size: 140%;
+    }
+    p, ul {
+      margin-bottom: 1.5em;
+    }
+    p.notes {
+      color: red;
+    }
+  }
+}

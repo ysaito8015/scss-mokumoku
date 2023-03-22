@@ -1,4 +1,18 @@
 // _base/base.scss
+// define BLOCK__ELEMENT--modifier in _components directory
+// Block: element
+// Element: element in the Block
+// Modifier: style of the Block and Element
+// refer: https://qiita.com/takahirocook/items/01fd723b934e3b38cbbc
+/* e.g.
+ * <section class="about">
+ *   <div class="about__item">
+ *     <h2 class="about__item-ttl">TITLE</h2>
+ *     <p class="about__item-text">text, text</p>
+ *     <a href="#" class="about__item-link about__item-link--red">MORE</a>
+ *   </div>
+ * </section>
+*/
 @use "../_base/global.scss" as *;
 
 body {
