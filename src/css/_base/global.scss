@@ -1,0 +1,23 @@
+// _base/global.scss
+// @use in other scss files
+// only defined for variables and mixins
+
+// color
+$color-mine-shaft: #333;
+$color-white: #fff;
+
+
+// breakpoint (viewport)
+$breakpoints: (
+  medium: 768,
+);
+@mixin sp {
+  @media screen and (max-width: #{map-get($breakpoints, medium) - 0.02}px) {
+    @content;
+  }
+}
+@mixin pc {
+  @media screen and (min-width: #{map-get($breakpoints, medium)}px), print {
+    @content;
+  }
+}

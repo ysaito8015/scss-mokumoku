@@ -1,0 +1,14 @@
+// _base/base.scss
+@use "../_base/global.scss" as *;
+
+body {
+  font-family: "Noto Sans JP", ans-serif;
+  color: $color-mine-shaft;
+  background-color: $color-white;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
